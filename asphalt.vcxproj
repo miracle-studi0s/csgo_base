@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Alpha|Win32">
+      <Configuration>Alpha</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Alpha|Win32">
+      <Configuration>Legacy Alpha</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Beta|Win32">
+      <Configuration>Legacy Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Debug|Win32">
+      <Configuration>Legacy Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Release|Win32">
+      <Configuration>Legacy Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a6897ad9-493e-45b8-a4cb-d85d527c75c0}</ProjectGuid>
+    <RootNamespace>asphalt</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Alpha|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Alpha|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>csgo-debug</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'">
+    <TargetName>csgo-legacy_debug</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>csgo-release</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;X:\Coding\shared\lib\release;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'">
+    <TargetName>csgo-legacy_beta</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;X:\Coding\shared\lib\release;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Alpha|Win32'">
+    <TargetName>csgo-legacy_alpha</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;X:\Coding\shared\lib\release;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Release|Win32'">
+    <TargetName>csgo-legacy</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;X:\Coding\shared\lib\release;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <TargetName>csgo-release_beta</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;X:\Coding\shared\lib\release;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'">
+    <TargetName>csgo-release_alpha</TargetName>
+    <ExternalIncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\other;$(SolutionDir)\deps\minhook;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\sol2;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;X:\Coding\shared\lib\release;$(LibraryPath);$(SolutionDir)\deps\freetype;$(SolutionDir)\deps\luajit;$(SolutionDir)\deps\luajit\src;$(SolutionDir)\deps\minhook</LibraryPath>
+    <OutDir>$(SolutionDir)\bins\</OutDir>
+    <IntDir>$(SolutionDir)\objs\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;luajit.lib;lua51.lib;%(AdditionalDependencies);D3DCompiler.lib;minhook_lib.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LEGACY;WIN32;_DEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;luajit.lib;lua51.lib;%(AdditionalDependencies);D3DCompiler.lib;minhook_lib.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>luajit.lib;lua51.lib;freetype_release.lib;minhook_lib.lib;%(AdditionalDependencies);D3DCompiler.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__BETA__;WIN32;NDEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>luajit.lib;lua51.lib;freetype_release.lib;minhook_lib.lib;%(AdditionalDependencies);D3DCompiler.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Alpha|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__ALPHA__;WIN32;NDEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>luajit.lib;lua51.lib;freetype_release.lib;minhook_lib.lib;%(AdditionalDependencies);D3DCompiler.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>luajit.lib;lua51.lib;freetype_release.lib;minhook_lib.lib;%(AdditionalDependencies);D3DCompiler.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__BETA__;WIN32;NDEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>luajit.lib;lua51.lib;freetype_release.lib;minhook_lib.lib;%(AdditionalDependencies);D3DCompiler.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>__ALPHA__;WIN32;NDEBUG;ASPHALT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>luajit.lib;lua51.lib;freetype_release.lib;minhook_lib.lib;%(AdditionalDependencies);D3DCompiler.lib</AdditionalDependencies>
+      <AdditionalOptions> /NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cheat\callbacks.hpp" />
+    <ClInclude Include="cheat\cheat.hpp" />
+    <ClInclude Include="cheat\features\features.hpp" />
+    <ClInclude Include="cheat\features\helpers\animation_fix.hpp" />
+    <ClInclude Include="cheat\features\helpers\backtracking.hpp" />
+    <ClInclude Include="cheat\features\helpers\engine_prediction.hpp" />
+    <ClInclude Include="cheat\features\helpers\game_information.hpp" />
+    <ClInclude Include="cheat\features\helpers\helpers.hpp" />
+    <ClInclude Include="cheat\features\helpers\ik_solver.hpp" />
+    <ClInclude Include="cheat\features\helpers\local_animation_fix.hpp" />
+    <ClInclude Include="cheat\features\helpers\server_bones.hpp" />
+    <ClInclude Include="cheat\features\helpers\threaded_animstate.hpp" />
+    <ClInclude Include="cheat\hooks\hooks.hpp" />
+    <ClInclude Include="cheat\main_definitions.hpp" />
+    <ClInclude Include="cheat\render\renderer.hpp" />
+    <ClInclude Include="cheat\sdk\entity_listener.hpp" />
+    <ClInclude Include="cheat\sdk\event_listener.hpp" />
+    <ClInclude Include="cheat\sdk\local_player.hpp" />
+    <ClInclude Include="cheat\sdk\md5.hpp" />
+    <ClInclude Include="cheat\sdk\threads.hpp" />
+    <ClInclude Include="cheat\security\bit_vector.hpp" />
+    <ClInclude Include="cheat\other\console.hpp" />
+    <ClInclude Include="cheat\other\fast_memcpy.hpp" />
+    <ClInclude Include="cheat\sdk\color.hpp" />
+    <ClInclude Include="cheat\sdk\convar_list.hpp" />
+    <ClInclude Include="cheat\sdk\crc32.hpp" />
+    <ClInclude Include="cheat\sdk\entities.hpp" />
+    <ClInclude Include="cheat\sdk\interfaces.hpp" />
+    <ClInclude Include="cheat\sdk\math.hpp" />
+    <ClInclude Include="cheat\sdk\memory.hpp" />
+    <ClInclude Include="cheat\sdk\modules.hpp" />
+    <ClInclude Include="cheat\sdk\offsets.hpp" />
+    <ClInclude Include="cheat\sdk\sdk.hpp" />
+    <ClInclude Include="cheat\sdk\valve.hpp" />
+    <ClInclude Include="cheat\sdk\valve_defines.hpp" />
+    <ClInclude Include="cheat\sdk\valve_interfaces.hpp" />
+    <ClInclude Include="cheat\sdk\valve_misc.hpp" />
+    <ClInclude Include="cheat\sdk\valve_structs.hpp" />
+    <ClInclude Include="cheat\security\security.hpp" />
+    <ClInclude Include="cheat\security\x32_seeds.hpp" />
+    <ClInclude Include="cheat\security\xored_strings_vm.hpp" />
+    <ClInclude Include="cheat\security\xored_numbers.hpp" />
+    <ClInclude Include="cheat\security\xored_pointers.hpp" />
+    <ClInclude Include="cheat\security\xored_strings.hpp" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_freetype.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="cheat\security\syscalls\ae86.hpp" />
+    <ClInclude Include="cheat\security\syscalls\hash.hpp" />
+    <ClInclude Include="cheat\security\syscalls\win.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cheat\cheat.cpp" />
+    <ClCompile Include="cheat\features\helpers\animation_fix.cpp" />
+    <ClCompile Include="cheat\features\helpers\backtracking.cpp" />
+    <ClCompile Include="cheat\features\helpers\engine_prediction.cpp" />
+    <ClCompile Include="cheat\features\helpers\game_information.cpp" />
+    <ClCompile Include="cheat\features\helpers\local_animation_fix.cpp" />
+    <ClCompile Include="cheat\features\helpers\server_bones.cpp" />
+    <ClCompile Include="cheat\features\helpers\threaded_animstate.cpp" />
+    <ClCompile Include="cheat\hooks\detour_hooks.cpp" />
+    <ClCompile Include="cheat\hooks\hooks.cpp" />
+    <ClCompile Include="cheat\hooks\proxy_hooks.cpp" />
+    <ClCompile Include="cheat\hooks\vmt_hooks.cpp" />
+    <ClCompile Include="cheat\hooks\winapi_hooks.cpp" />
+    <ClCompile Include="cheat\other\console.cpp" />
+    <ClCompile Include="cheat\render\renderer.cpp" />
+    <ClCompile Include="cheat\sdk\convar_list.cpp" />
+    <ClCompile Include="cheat\sdk\crc32.cpp" />
+    <ClCompile Include="cheat\sdk\entities.cpp" />
+    <ClCompile Include="cheat\sdk\entity_listener.cpp" />
+    <ClCompile Include="cheat\sdk\event_listener.cpp" />
+    <ClCompile Include="cheat\sdk\interfaces.cpp" />
+    <ClCompile Include="cheat\sdk\local_player.cpp" />
+    <ClCompile Include="cheat\sdk\math.cpp" />
+    <ClCompile Include="cheat\sdk\md5.cpp" />
+    <ClCompile Include="cheat\sdk\memory.cpp" />
+    <ClCompile Include="cheat\sdk\modules.cpp" />
+    <ClCompile Include="cheat\sdk\netvars.cpp" />
+    <ClCompile Include="cheat\sdk\offsets.cpp" />
+    <ClCompile Include="cheat\sdk\sdk.cpp" />
+    <ClCompile Include="cheat\sdk\threads.cpp" />
+    <ClCompile Include="cheat\sdk\valve_misc.cpp" />
+    <ClCompile Include="cheat\sdk\valve_structs.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_freetype.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="cheat\security\syscalls\ae86.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cheat\sdk\netvars.hpp" />
+    <None Include="cheat\security\security.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

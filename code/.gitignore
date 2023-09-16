@@ -3,8 +3,9 @@
 
 # VS artifact files
 .vs/
-bins/
-objs/
+x64/
+Debug/
+Release/
 
 # Compiled Object files
 *.slo
@@ -38,3 +39,4 @@ objs/
 *.out
 *.app
 *.idb
+Debug
